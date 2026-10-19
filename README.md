@@ -255,11 +255,10 @@ For containerized execution, install Docker Desktop or another compatible Docker
 ### 1. Clone the repository
 
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
-cd <YOUR_PROJECT_DIRECTORY>
+git lfs clone https://github.com/RohitGolabhavi575/Intelligent-E-commerce-Search
+cd Intelligent E-commerce Search
 ```
-
-Replace the placeholders with your actual repository URL and directory name.
+LFS-Large file storage is used to compress large data files in order to store in git; make sure to install, if not  done already: _git lfs install_.
 
 ### 2. Prepare the required assets
 
@@ -267,7 +266,7 @@ Ensure the following files exist in the project root:
 
 ```text
 data/processed/products_clean.csv
-models/product_embeddings_bge_small.npy
+data/embeddings//product_embeddings_bge_small.npy
 ```
 
 The filenames and locations must match the paths configured by the application.
@@ -482,6 +481,7 @@ These are possible extensions rather than features claimed to be implemented in 
 - **Machine learning library:** [scikit-learn](https://scikit-learn.org/)
 - **Containerization:** [Docker](https://www.docker.com/)
 
----
+## Snapshots
+<img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/fff0e1cd-c740-4d78-96f8-effb47988c73" />
+<img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/4544d1b3-f763-405a-a3b8-a06ec228a427" />
 
-**Project focus:** Building a practical product-search application by combining information retrieval, semantic representations, rank fusion, API development, and containerization.
