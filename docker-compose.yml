@@ -1,0 +1,9 @@
+services:
+  search-api:
+    build: .
+    container_name: ecommerce-search-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data:ro
+    restart: unless-stopped
